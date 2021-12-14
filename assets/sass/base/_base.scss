@@ -1,0 +1,36 @@
+/*=================== BASE ===================*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $body-font;
+  font-size: $md-font;
+  background-color: $dark-color;
+  color: $white-color;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: $body-font;
+  font-size: $md-font;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

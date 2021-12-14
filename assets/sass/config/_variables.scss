@@ -1,0 +1,64 @@
+/*=================== FONTS ===================*/
+@font-face {
+  font-family: Chronicle Display;
+  src: url(/assets/fonts/ChronicleDisplay.woff);
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(../../fonts/Gilroy.woff);
+}
+
+/*=================== VARIABLES ===================*/
+// Colors
+$white-color: hsl(0, 0%, 100%);
+$dark-color: hsl(200, 55%, 10%);
+$accent-color: hsl(42, 94%, 75%);
+
+// Font Sizes
+$xl-font: 2.5rem; // 40px
+$lg-font: 1.5rem; // 24px
+$md-font: 0.938rem; // 15px
+$sm-font: 0.813rem; // 13px
+$xm-font: 0.75rem; // 12px
+@media screen and (min-width: 968px) {
+  // For big screen.
+  $xl-font: 3rem; // 64px
+  $lg-font: 2.25rem; // 36px
+  $md-font: 1rem; // 16px
+  $sm-font: 0.875rem; // 14px
+  $xm-font: 0.813rem; // 13px
+}
+
+// Font Weight
+$reguler: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$bolder: 800;
+
+// Font Family
+$body-font: "Chronicle Display";
+$title-font: "Gilroy";
+
+// Margenes & Paddings
+$x-0-25: 0.25rem; // 4px
+$x-0-5: 0.5rem; // 8px
+$x-0-75: 0.75rem; // 12px
+$x-1: 1rem; // 16px
+$x-1-25: 1.25rem; // 20px
+$x-1-5: 1.5rem; // 24px
+$x-1-75: 1.75rem; // 28px
+$x-2: 2rem; // 32px
+$x-2-5: 2.5rem; // 40px
+$x-2-75: 2.75rem; // 44px
+$x-3: 3rem; // 48px
+
+/* Z Index */
+$z-1: 1;
+$z-10: 10;
+$z-100: 100;
+
+/* Others */
+$hidden: hidden;
+$transition: all 300ms ease-in-out;
+$header-height: 4rem;
