@@ -1,0 +1,86 @@
+.hero__section {
+  height: calc(100vh - 8rem);
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to bottom, $dark-color, transparent);
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: -1;
+  }
+  .hero__img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    left: 0;
+    &-top {
+      top: 0;
+    }
+    &-middle {
+      top: 25%;
+    }
+    &-bottom {
+      top: 40%;
+    }
+  }
+  .hero__container {
+    position: relative;
+    z-index: $z-1;
+    @include breakpoint(sm) {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include breakpoint(md) {
+      width: 600px;
+    }
+    @include breakpoint(lg) {
+      width: 650px;
+    }
+    .hero__data {
+      .hero__tagline {
+        color: $accent-color;
+        text-transform: uppercase;
+        font-size: $xs-font;
+        font-weight: $semi-bold;
+        letter-spacing: 0.3rem;
+        margin-bottom: $x-1-5;
+        display: flex;
+        align-items: center;
+        column-gap: 0.7rem;
+        .hero__tagline-line {
+          width: 50px;
+          height: 2px;
+          background-color: $accent-color;
+          display: block;
+        }
+      }
+      .hero__title {
+        margin-bottom: $x-1-5;
+        @include breakpoint(xs) {
+          font-size: $lg-font;
+        }
+        @include breakpoint(sm) {
+          font-size: $xl-font;
+        }
+        @include breakpoint(md) {
+          font-size: 3rem;
+        }
+        @include breakpoint(lg) {
+          font-size: 4rem;
+        }
+      }
+      .hero__button {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 0.5rem;
+      }
+    }
+  }
+}

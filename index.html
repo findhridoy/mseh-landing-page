@@ -23,15 +23,78 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header" id="header"></header>
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">MSEH</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="menu__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Equipment</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__hamburger hide-for-desktop" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a href="#" class="nav__account hide-for-mobile">
+          <i class="ri-account-circle-line"></i>Account
+        </a>
+      </nav>
+    </header>
 
     <!-- Main -->
     <main class="main">
       <!-- Hiro Section -->
-      <section class="hero__section" id="hero-section"></section>
+      <section class="hero__section" id="hero-section">
+        <div class="hero__container container">
+          <div class="hero__data">
+            <div class="hero__tagline">
+              <span class="hero__tagline-line"></span>
+              A Hikking Guide
+            </div>
+            <h1 class="hero__title">
+              Be Prepared For The <br />
+              Mountains And Beyond
+            </h1>
+            <a href="#" class="hero__button">
+              scroll down <i class="ri-arrow-down-line"></i>
+            </a>
+          </div>
+        </div>
 
-      <!-- Hiking Information Section -->
-      <section class="hiking-info__section" id="hiking-info-section"></section>
+        <img
+          src="assets/images/hero-top.png"
+          alt=""
+          class="hero__img hero__img-top"
+        />
+        <img
+          src="assets/images/hero-middle.png"
+          alt=""
+          class="hero__img hero__img-middle"
+        />
+        <img
+          src="assets/images/hero-bottom.png"
+          alt=""
+          class="hero__img hero__img-bottom"
+        />
+      </section>
+
+      <!-- Hikking Information Section -->
+      <section
+        class="hikking-info__section"
+        id="hikking-info-section"
+      ></section>
     </main>
 
     <!-- Footer -->

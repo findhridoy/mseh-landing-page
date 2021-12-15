@@ -1,6 +1,6 @@
 /*=================== LAYOUT ===================*/
 .container {
-  max-width: 968px;
+  max-width: 1168px;
   margin-right: $x-1;
   margin-left: $x-1;
   @include breakpoint(sm) {
@@ -27,12 +27,13 @@
 .d-flex {
   display: flex;
 }
-.align-items-c {
-  align-items: center;
+.hide-for-mobile {
+  @media screen and (max-width: 767px) {
+    display: none !important;
+  }
 }
-.justify-content-c {
-  justify-content: center;
-}
-.justify-content-sb {
-  justify-content: space-between;
+.hide-for-desktop {
+  @media screen and (min-width: 767px) {
+    display: none !important;
+  }
 }

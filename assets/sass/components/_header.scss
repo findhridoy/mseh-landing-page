@@ -1,0 +1,93 @@
+.header {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    &__logo {
+      color: $white-color;
+      font-size: $lg-font;
+      font-weight: $bold;
+      letter-spacing: 0.1rem;
+      font-family: $title-font;
+      position: relative;
+      z-index: $z-1;
+    }
+    &__menu {
+      @media screen and (max-width: 768px) {
+        position: fixed;
+        // background-color: $dark-color;
+        width: 100%;
+        height: 200px;
+        right: 0;
+        top: -100%;
+        z-index: $z-1;
+        transition: $trans-cubic;
+      }
+      .menu__list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        row-gap: 1rem;
+        align-items: center;
+        @include breakpoint(md) {
+          flex-direction: row;
+          column-gap: 1.5rem;
+        }
+      }
+    }
+    // Show menu
+    .show-menu {
+      @media screen and (max-width: 768px) {
+        top: 65px;
+      }
+    }
+    &__hamburger {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      z-index: $z-1;
+      span {
+        width: 32px;
+        height: 2px;
+        display: block;
+        border-radius: 2px;
+        background-color: $white-color;
+        transition: $trans-cubic;
+        &:not(:nth-child(3)) {
+          margin-bottom: $x-0-25;
+        }
+        &:nth-child(2) {
+          width: 28px;
+        }
+      }
+    }
+    // Cross hamburger and show menu
+    .cross-hamburger {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(2px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(2px);
+        }
+        &:not(:nth-child(3)) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__account {
+      display: flex;
+      align-items: center;
+      column-gap: 0.3rem;
+    }
+  }
+}
