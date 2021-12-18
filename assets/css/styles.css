@@ -1,12 +1,12 @@
 /*=================== FONTS ===================*/
 @font-face {
   font-family: Chronicle Display;
-  src: url(/assets/fonts/ChronicleDisplay.woff);
+  src: url(../../assets/fonts/ChronicleDisplay.woff);
 }
 
 @font-face {
   font-family: Gilroy;
-  src: url(/assets/fonts/Gilroy.woff);
+  src: url(../../assets/fonts/Gilroy.woff);
 }
 
 /*=================== VARIABLES ===================*/
