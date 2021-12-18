@@ -1,12 +1,11 @@
 .hero__section {
-  height: calc(100vh - 8rem);
-  display: flex;
-  align-items: center;
+  height: calc(100vh - 3rem);
+  margin-top: 6.25rem; // 100px
   &::after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 400px;
+    height: 25rem; // 400px
     background-image: linear-gradient(to bottom, $dark-color, transparent);
     left: 0;
     top: 0;
@@ -33,53 +32,45 @@
     position: relative;
     z-index: $z-1;
     @include breakpoint(sm) {
-      width: 500px;
+      width: 31.25rem; // 500px
       margin-left: auto;
       margin-right: auto;
     }
     @include breakpoint(md) {
-      width: 600px;
+      width: 37.5rem; // 600px
     }
     @include breakpoint(lg) {
-      width: 650px;
+      width: 40.625rem; // 650px
     }
     .hero__data {
       .hero__tagline {
-        color: $accent-color;
-        text-transform: uppercase;
-        font-size: $xs-font;
-        font-weight: $semi-bold;
-        letter-spacing: 0.3rem;
-        margin-bottom: $x-1-5;
-        display: flex;
-        align-items: center;
-        column-gap: 0.7rem;
-        .hero__tagline-line {
-          width: 50px;
-          height: 2px;
-          background-color: $accent-color;
-          display: block;
+        margin-bottom: $x-1;
+        @include breakpoint(md) {
+          margin-bottom: $x-1-5;
         }
       }
       .hero__title {
-        margin-bottom: $x-1-5;
-        @include breakpoint(xs) {
-          font-size: $lg-font;
-        }
-        @include breakpoint(sm) {
-          font-size: $xl-font;
-        }
+        margin-bottom: $x-1;
         @include breakpoint(md) {
-          font-size: 3rem;
-        }
-        @include breakpoint(lg) {
-          font-size: 4rem;
+          margin-bottom: $x-1-5;
         }
       }
       .hero__button {
-        display: inline-flex;
-        align-items: center;
-        column-gap: 0.5rem;
+        &--icon {
+          transform: translateY(0);
+          animation: up-down 1000ms ease-in-out infinite;
+        }
+        @keyframes up-down {
+          0% {
+            transform: translateY(-0.3125rem); // 5px
+          }
+          50% {
+            transform: translateY(0.3125rem); // 5px
+          }
+          100% {
+            transform: translateY(-0.3125rem); // 5px
+          }
+        }
       }
     }
   }

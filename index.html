@@ -25,7 +25,7 @@
     <!-- Header -->
     <header class="header">
       <nav class="nav container">
-        <a href="index.html" class="nav__logo">MSEH</a>
+        <a href="index.html" class="nav__logo logo">MSEH</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="menu__list">
@@ -36,15 +36,15 @@
               <a href="#" class="nav__link">About us</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Blog</a>
+              <a href="#hikking" class="nav__link">Blog</a>
             </li>
           </ul>
         </div>
 
         <div class="nav__hamburger hide-for-desktop" id="nav-hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <div class="hamburger__btn">
+            <div class="bar"></div>
+          </div>
         </div>
 
         <a href="#" class="nav__account hide-for-mobile">
@@ -58,17 +58,17 @@
       <!-- Hiro Section -->
       <section class="hero__section" id="hero-section">
         <div class="hero__container container">
-          <div class="hero__data">
-            <div class="hero__tagline">
-              <span class="hero__tagline-line"></span>
+          <div class="hero__data" id="hero-data">
+            <div class="hero__tagline tagline">
+              <span class="tagline--line"></span>
               A Hikking Guide
             </div>
             <h1 class="hero__title">
               Be Prepared For The <br />
               Mountains And Beyond
             </h1>
-            <a href="#" class="hero__button">
-              scroll down <i class="ri-arrow-down-line"></i>
+            <a href="#hikking" class="hero__button button">
+              scroll down <i class="ri-arrow-down-line hero__button--icon"></i>
             </a>
           </div>
         </div>
@@ -77,28 +77,185 @@
           src="assets/images/hero-top.png"
           alt=""
           class="hero__img hero__img-top"
+          id="top-img"
         />
         <img
           src="assets/images/hero-middle.png"
           alt=""
           class="hero__img hero__img-middle"
+          id="middle-img"
         />
         <img
           src="assets/images/hero-bottom.png"
           alt=""
           class="hero__img hero__img-bottom"
+          id="bottom-img"
         />
       </section>
 
       <!-- Hikking Information Section -->
-      <section
-        class="hikking-info__section"
-        id="hikking-info-section"
-      ></section>
+      <section class="hikking__section" id="hikking">
+        <div class="hikking__container container">
+          <div class="hikking__content">
+            <!-- Hikking Card 1 -->
+            <div class="hikking__card">
+              <div class="hikking__data">
+                <span class="hikking__data--count">01</span>
+                <div class="hikking__tagline tagline">
+                  <span class="tagline--line"></span>
+                  Lorem, ipsum.
+                </div>
+                <h2 class="hikking__title title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </h2>
+                <p class="hikking__description description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate excepturi nihil magnam, ad fuga voluptates saepe
+                  natus blanditiis eaque culpa, consequuntur omnis neque vel
+                  tempore eos? Praesentium veritatis ipsum repellat labore
+                  accusantium eum rerum cupiditate quisquam culpa excepturi
+                  quis, maxime iusto fugit eligendi aliquam quibusdam, odit
+                  itaque.
+                </p>
+                <a href="#" class="hikking__button button">
+                  see more
+                  <i class="ri-arrow-right-line hikking__button--icon"></i>
+                </a>
+              </div>
+              <div class="hikking__img">
+                <img src="assets/images/01.png" alt="hikking-image" />
+              </div>
+            </div>
+
+            <!-- Hikking Card 2 -->
+            <div class="hikking__card">
+              <div class="hikking__data">
+                <span class="hikking__data--count">02</span>
+                <div class="hikking__tagline tagline">
+                  <span class="tagline--line"></span>
+                  Lorem, ipsum.
+                </div>
+                <h2 class="hikking__title title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </h2>
+                <p class="hikking__description description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate excepturi nihil magnam, ad fuga voluptates saepe
+                  natus blanditiis eaque culpa, consequuntur omnis neque vel
+                  tempore eos? Praesentium veritatis ipsum repellat labore
+                  accusantium eum rerum cupiditate quisquam culpa excepturi
+                  quis, maxime iusto fugit eligendi aliquam quibusdam, odit
+                  itaque.
+                </p>
+                <a href="#" class="hikking__button button">
+                  see more
+                  <i class="ri-arrow-right-line hikking__button--icon"></i>
+                </a>
+              </div>
+              <div class="hikking__img">
+                <img src="assets/images/02.png" alt="hikking-image" />
+              </div>
+            </div>
+
+            <!-- Hikking Card 3 -->
+            <div class="hikking__card">
+              <div class="hikking__data">
+                <span class="hikking__data--count">03</span>
+                <div class="hikking__tagline tagline">
+                  <span class="tagline--line"></span>
+                  Lorem, ipsum dolor.
+                </div>
+                <h2 class="hikking__title title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </h2>
+                <p class="hikking__description description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate excepturi nihil magnam, ad fuga voluptates saepe
+                  natus blanditiis eaque culpa, consequuntur omnis neque vel
+                  tempore eos? Praesentium veritatis ipsum repellat labore
+                  accusantium eum rerum cupiditate quisquam culpa excepturi
+                  quis, maxime iusto fugit eligendi aliquam quibusdam, odit
+                  itaque.
+                </p>
+                <a href="#" class="hikking__button button">
+                  see more
+                  <i class="ri-arrow-right-line hikking__button--icon"></i>
+                </a>
+              </div>
+              <div class="hikking__img">
+                <img src="assets/images/03.png" alt="hikking-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__content">
+          <div class="footer__data">
+            <a href="#" class="footer__logo logo">MSEH</a>
+            <span class="footer__subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid.
+            </span>
+            <div class="footer__social">
+              <a href="#" class="footer__social--link">
+                <i class="ri-facebook-box-fill footer__social--icon"></i>
+              </a>
+              <a href="#" class="footer__social--link">
+                <i class="ri-twitter-fill footer__social--icon"></i>
+              </a>
+              <a href="#" class="footer__social--link">
+                <i class="ri-linkedin-box-fill footer__social--icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__data">
+            <ul class="footer__nav--list">
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">Terms</a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">Security</a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">Privacy</a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">Docs</a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">Status</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__data">
+            <ul class="footer__nav--list">
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">Pricing</a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">API</a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">Training</a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">Contact</a>
+              </li>
+              <li class="footer__nav--item">
+                <a href="#" class="footer__nav--link">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span class="footer__copyright">
+          &copy; 2021 MSEH. All rights reserved.
+        </span>
+      </div>
+    </footer>
 
     <!-- Import Js File -->
     <script src="assets/js/main.js"></script>

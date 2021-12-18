@@ -15,19 +15,11 @@ $dark-color: hsl(200, 55%, 10%);
 $accent-color: hsl(42, 94%, 75%);
 
 // Font Sizes
-$xl-font: 2rem; // 40px
-$lg-font: 1.5rem; // 24px
-$md-font: 0.938rem; // 15px
-$sm-font: 0.813rem; // 13px
-$xs-font: 0.75rem; // 12px
-@media screen and (min-width: 968px) {
-  // For big screen.
-  $xl-font: 3rem; // 64px
-  $lg-font: 2.25rem; // 36px
-  $md-font: 1rem; // 16px
-  $sm-font: 0.875rem; // 14px
-  $xm-font: 0.813rem; // 13px
-}
+$biggest-font: 2rem; // 32px
+$big-font: 1.5rem; // 24px
+$normal-font: 0.938rem; // 15px
+$small-font: 0.813rem; // 13px
+$smaller-font: 0.75rem; // 12px
 
 // Font Weight
 $reguler: 400;
@@ -57,6 +49,7 @@ $x-3: 3rem; // 48px
 $z-1: 1;
 $z-10: 10;
 $z-100: 100;
+$z-999: 999;
 
 /* Others */
 $hidden: hidden;

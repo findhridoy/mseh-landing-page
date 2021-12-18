@@ -1,0 +1,46 @@
+.footer {
+  padding-top: $x-3;
+  .footer__container {
+    .footer__content {
+      display: grid;
+      gap: 1.5rem;
+      @include breakpoint(sm) {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+      }
+      .footer__data {
+        .footer__subtitle {
+          display: block;
+          font-size: $small-font;
+          color: $white-color;
+          opacity: 0.7;
+          margin-top: $x-0-5;
+        }
+        .footer__social {
+          margin-top: $x-1;
+          .footer__social--link {
+            margin-right: $x-0-5;
+            .footer__social--icon {
+              font-size: 1.2rem;
+              color: $white-color;
+              opacity: 0.8;
+            }
+          }
+        }
+        .footer__nav--list {
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.4rem;
+        }
+      }
+    }
+    .footer__copyright {
+      display: block;
+      font-size: $smaller-font;
+      margin-top: $x-1;
+      color: $white-color;
+      opacity: 0.8;
+      padding: $x-1 0;
+    }
+  }
+}
